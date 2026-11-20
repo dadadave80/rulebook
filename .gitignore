@@ -4,3 +4,7 @@ target/
 # Node
 node_modules/
 .env*
+
+# Stellar CLI config (can hold keys)
+.stellar/
+.soroban/
