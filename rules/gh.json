@@ -1,0 +1,47 @@
+{
+  "jurisdiction": "GH",
+  "name": "Ghana",
+  "checked": "2026-11-21",
+  "sources": {
+    "bog-vasp-faq": {
+      "title": "Frequently Asked Questions: The Virtual Asset Service Providers Act",
+      "issuer": "Bank of Ghana",
+      "url": "https://www.bog.gov.gh/wp-content/uploads/2026/03/VASP-Act-FAQs.pdf",
+      "date": "2026-02"
+    },
+    "bog-vacc-remarks": {
+      "title": "Governor's opening remarks at the inauguration of the Virtual Assets Coordinating Committee",
+      "issuer": "Bank of Ghana",
+      "url": "https://www.bog.gov.gh/wp-content/uploads/2026/08/Opening-Remarks-by-Governor-Dr-Johnson-Pandit-Asiama-at-the-Inauguration-of-the-Virtual-Assets-Coordinating-Committee-.pdf",
+      "date": "2026-08-25"
+    },
+    "sec-sandbox": {
+      "title": "Securities Industry (Regulatory Sandbox Licensing) Guidelines 2026 (SEC/GUI/001/03/2026)",
+      "issuer": "Securities and Exchange Commission, Ghana",
+      "url": "https://sec.gov.gh/wp-content/uploads/Final-Regulatory-Laws/Guidelines/Guidelines_Regulatory_Sandbox%20Licensing_2026.pdf",
+      "date": "2026-03-09"
+    }
+  },
+  "case_authorities": {
+    "value": null,
+    "source": "bog-vacc-remarks",
+    "note": "Not found in published Bank of Ghana or SEC material. The regulators are still developing operational guidelines under the Virtual Asset Service Providers Act, 2025 (Act 1154)."
+  },
+  "freeze_notice": {
+    "value": null,
+    "source": "sec-sandbox",
+    "ref": "13(3)",
+    "note": "No freeze-reporting deadline found. Separately, SEC sandbox firms must report material incidents, including fraud events, to the SEC within 24 hours."
+  },
+  "p2p_identity_check": {
+    "value": null,
+    "source": "bog-vasp-faq",
+    "ref": "Question 13",
+    "note": "Platforms must verify customer identity. No P2P-specific account-match rule found."
+  },
+  "min_reserve_bps": {
+    "value": null,
+    "source": "bog-vacc-remarks",
+    "note": "No stablecoin reserve requirement found."
+  }
+}

@@ -6,7 +6,7 @@ use soroban_sdk::{contract, contractimpl, contracttype, Address, BytesN};
 pub enum Authority {
     CourtOrder,
     RegulatoryDirective,
-    NfiuInstruction,
+    FiuInstruction,
 }
 
 #[contract]

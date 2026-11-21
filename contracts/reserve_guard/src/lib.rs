@@ -7,7 +7,9 @@ pub struct ReserveGuard;
 #[contractimpl]
 #[allow(unused_variables)]
 impl ReserveGuard {
-    pub fn init(admin: Address, token: Address, custodian_public_key: BytesN<32>) {
+    /// `min_reserve_bps` is the minimum reserve ratio in basis points of supply
+    /// (10_000 = 1:1), taken from the jurisdiction's rule set.
+    pub fn init(admin: Address, token: Address, custodian_public_key: BytesN<32>, min_reserve_bps: u32) {
         unimplemented!()
     }
 
@@ -15,7 +17,7 @@ impl ReserveGuard {
         unimplemented!()
     }
 
-    /// Fails unless reserves >= 1.02 × (supply + amount).
+    /// Fails unless reserves × 10_000 >= min_reserve_bps × (supply + amount).
     pub fn mint(to: Address, amount: i128) {
         unimplemented!()
     }

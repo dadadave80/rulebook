@@ -1,0 +1,40 @@
+{
+  "jurisdiction": "NG",
+  "name": "Nigeria",
+  "checked": "2026-11-21",
+  "sources": {
+    "cbn-nsva": {
+      "title": "Regulations for the Operations of Non-Security Virtual Assets in Nigeria",
+      "issuer": "Central Bank of Nigeria",
+      "url": "https://www.cbn.gov.ng/Out/2026/CCD/REGULATIONS%20FOR%20THE%20OPERATIONS%20OF%20NON-SECURITY%20VIRTUAL%20ASSETS%20IN%20NIGERIA.pdf",
+      "in_force": "2026-11-05"
+    }
+  },
+  "case_authorities": {
+    "value": {
+      "freeze": ["CourtOrder", "RegulatoryDirective", "FiuInstruction"],
+      "clawback": ["CourtOrder", "RegulatoryDirective"]
+    },
+    "source": "cbn-nsva",
+    "ref": "37.3(a)-(b)",
+    "note": "FiuInstruction is an NFIU instruction. Burning frozen tokens needs a court order or regulatory directive. Section 26.8.2 separately requires freezing without delay when assets of a sanctions-designated person are found."
+  },
+  "freeze_notice": {
+    "value": { "within_hours": 24, "to": ["CBN", "NFIU"] },
+    "source": "cbn-nsva",
+    "ref": "26.18.4",
+    "note": "Every use of freeze, block or burn functions is reported to the CBN, and also to the NFIU when the action relates to suspected money laundering, terrorist or proliferation financing, or sanctions."
+  },
+  "p2p_identity_check": {
+    "value": ["account_name", "bvn"],
+    "source": "cbn-nsva",
+    "ref": "10.3.3",
+    "note": "The name and BVN on the bank account the naira payment came from, or went to, must match the verified customer before the token is released."
+  },
+  "min_reserve_bps": {
+    "value": 10200,
+    "source": "cbn-nsva",
+    "ref": "24.4, 24.52",
+    "note": "Full 1:1 backing plus overcollateralisation of at least 2%."
+  }
+}
